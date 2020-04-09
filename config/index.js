@@ -1,2 +1,4 @@
-import { View, ViewPropTypes as RNViewPropTypes } from 'react-native';
-export const ViewPropTypes = RNViewPropTypes || View.propTypes;
+import PropTypes from 'prop-types';
+export const ViewPropTypes = PropTypes.shape({
+  style: PropTypes.any,
+});
